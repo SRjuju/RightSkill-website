@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score</title>
+    <link rel="icon" href="images/RightSkill.png" type="images/x-icon" />
+    <style>
+      .home2 {
+        display: inline-flex;
+        width: 2%;
+        margin-right: 10px;
+      }
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;   
+      }
+
+      body{
+          margin:0px;
+          background-position: center;
+          background-size: cover;
+          height: 100vh;
+          font-family: sans-serif;
+      }
+      .lol{
+        background: #c063fe;
+        margin-bottom: 30px;
+      }
+      .username,
+      .userpoints {
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+      }
+      .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+      .award_icon{
+          display: block;
+          font-size: 300px;
+          color: #fff;
+      }
+
+      .username, .userpoints{
+          color: #fff;
+          text-align: center;
+          margin-top: 15px;
+      }
+
+      .border{
+          height: 500px;
+          width: 500px;
+          display: block;
+          justify-content: center;
+          margin: 0px 400px;
+          border-radius: 10px;
+          top: 100px;
+          border-color: transparent;
+      }
+      .headd1{
+        display: block;
+        text-align: center;
+      }
+      .headd2{
+        display: flex;
+        padding-left:680px ;
+        padding-top: 8px;
+        padding-bottom: 15px;
+      }
+      .pcc {
+        position: absolute;
+        width: 3%;
+        right: 54%;
+       
+      }
+      .para1 {
+        background-color: rgb(50, 200, 246);
+        font-family: Oswald;
+        display: flex;
+        padding-inline: 10px;
+        padding-left: 50px;
+        margin-left: 30px;
+        font-style: italic;
+        font-weight: 900;
+        color: black;
+        font-size: 2rem;
+        transform: skew(10deg);
+        width:400px;
+        position:absolute;
+        top:172%;
+        transition: background-color 0.1s;
+        transition: color 0.1s;
+      }
+      .para1:hover {
+        color: white;
+        background-color: rgb(120, 81, 250);
+        cursor: pointer;
+      }
+      .para2{
+        background-color: rgb(50, 200, 246);
+        font-family: Oswald;
+        display: flex;
+        padding-inline: 10px;
+        padding-left: 60px;
+        margin-left: 20px;
+        font-style: italic;
+        font-weight: 900;
+        color: black;
+        font-size: 2rem;
+        transform: skew(10deg);
+        width:400px;
+        transition: background-color 0.1s;
+        transition: color 0.1s;
+        position:absolute;
+        top:172%;
+        left:33%;
+        right:70%
+      }
+      .para2:hover {
+        color: white;
+        background-color: rgb(120, 81, 250);
+        cursor: pointer;
+      }
+      .para3{
+        background-color: rgb(50, 200, 246);
+        font-family: Oswald;
+        display: flex;
+        padding-inline: 10px;
+        padding-left: 70px;
+        margin-left: 10px;
+        font-style: italic;
+        font-weight: 900;
+        color: black;
+        font-size: 2rem;
+        transform: skew(10deg);
+        width:440px;
+        transition: background-color 0.1s;
+        transition: color 0.1s;
+        position:absolute;
+        top:168%;
+        left:65%;
+        right:20%
+      }
+      .para3:hover{
+        color: white;
+        background-color: rgb(120, 81, 250);
+        cursor: pointer;
+      }
+      .para4{
+        background-color: greenyellow;
+        font-family: Oswald;
+        display: flex;
+        padding-inline: 10px;
+        padding-left: 50px;
+        margin-left: -40px;
+        font-style: italic;
+        font-weight: 900;
+        color: black;
+        font-size: 2rem;
+        transform: skew(10deg);
+        width:600px;
+        transition: background-color 0.1s;
+        transition: color 0.1s;
+        position:absolute;
+        top:173%;
+        left:65%;
+        right:20%
+      }
+      .hrf{
+        text-decoration: none;
+        width: 200px;
+      }
+      .img1{
+        position:absolute;
+        display: flex;
+        padding-left: 50px;
+        padding-right: 20px;
+        left:1%;
+        right:70%
+      }
+      .img2{
+        position:absolute;
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        left:35%;
+        right:50%
+      }
+      .img3{
+        position:absolute;
+        display: flex;
+        width: 25%;
+        padding-left: 20px;
+        padding-right: 20px;
+        left:70%;
+        right:20%
+      }
+      .bb1{
+        display: flex;
+      }
+      .llol{
+        display: block;
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lol">
+      <a href="RightSkill.html"><img src="images/back2.png" class="home2" /></a>
+      <h1 class="headd1">YOUR SCORE:</h1>
+        <div class="wrapper">
+          <div class="border">
+              <i class="fas fa-award award_icon" style="margin: 10px 0px 0px 130px; color: gold;"></i>
+              <h1 class="username"><span class="name" style="font-size: 50px; color: #fff;"></span><br>WELL DONE !</h1>
+              <p class="userpoints">Your Points <span class="points" style="color: greenyellow;"></span></p>
+          </div>
+        </div>
+    </div>
+    <img src="images/bag.png" class="pcc" alt />
+    <h1 class="headd2">STORE:</h1>
+    <h2 class="llol">RECOMMENDED:</h2>
+    <div class="bb1">
+      <a class="hrf" href="cookingcourses.html">
+        <img src="images/cooking.jpg" class="img1" alt />
+        <p class="para1">COOKING COURSES</p>
+      </a>
+    
+    
+      <a class="hrf" href="chesscourse.html">
+        <img src="images/chess.jpg" class="img2" alt />
+        <p class="para2">CHESS COURSES</p>
+      </a>
+      <a class="hrf" href="fitness.html">
+        <img src="images/fitness.png" class="img3" alt />
+        <p class="para3">FITNESS GUIDES</p>
+      </a><p class="para4">LEVELUP THROUGH PROGRESS</p>
+  </div>
+
+    <script src="https://kit.fontawesome.com/d56261bbb9.js"></script>
+
+    </div>
+    <script>
+      let user_points = localStorage.getItem("points1");
+      document.querySelector("span.points").innerHTML = user_points;
+    </script>
+  </body>
+</html>

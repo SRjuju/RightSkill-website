@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="icon" href="images/RightSkill.png" type="images/x-icon" />
+    <script defer src="./quizz.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Sans:wght@800&family=Oswald&family=Playpen+Sans:wght@700&display=swap");
+
+      .navv {
+        display: block;
+        background-color: #5c37f1;
+      }
+
+      .home2 {
+        display: inline-flex;
+        width: 2%;
+        margin-right: 10px;
+      }
+      .point2 {
+        display: inline-flex;
+        width: 2%;
+        border-radius: 100%;
+      }
+      .user2 {
+        display: inline-flex;
+        width: 2%;
+        border-radius: 100%;
+        float: right;
+        margin-right: 10px;
+      }
+      body {
+        background: linear-gradient(
+          to right,
+          rgb(89, 1, 172),
+          #003fbe,
+          rgb(89, 1, 172)
+        );
+        margin: 0px;
+      }
+      .head1 {
+        font-family: Merriweather;
+        display: block;
+        font-weight: 1000;
+        font-size: 3rem;
+        text-align: center;
+        color: white;
+      }
+      .head2 {
+        font-family: Merriweather;
+        display: block;
+        font-weight: 1000;
+        font-size: 2rem;
+        margin-bottom: 1%;
+        text-align: center;
+        color: white;
+      }
+      .crs {
+        height: 50px;
+        margin-right: 400px;
+        margin-left: 480px;
+      }
+      .imgr {
+        display: flex;
+        position: absolute;
+        width: 3.5%;
+        right: 70%;
+      }
+      .lcok {
+        display: flex;
+        position: absolute;
+        width: 3.5%;
+        right: 20%;
+      }
+      .hrf {
+        text-decoration: none;
+        width: 200px;
+      }
+      .para1 {
+        background-color: rgb(50, 200, 246);
+        font-family: Oswald;
+        display: flex;
+        padding-inline: 200px;
+        font-style: italic;
+        font-weight: 900;
+        color: black;
+        font-size: 2rem;
+        transform: skew(10deg);
+      }
+      .para1:hover {
+        color: white;
+        background-color: rgb(81, 211, 250);
+        cursor: pointer;
+      }
+      .para2 {
+        background-color: rgb(50, 200, 246);
+        font-family: Oswald;
+        display: flex;
+        padding-inline: 90px;
+        font-style: italic;
+        font-weight: 900;
+        color: black;
+        font-size: 2rem;
+        transform: skew(10deg);
+      }
+      .para2:hover {
+        color: white;
+        background-color: rgb(81, 211, 250);
+        cursor: pointer;
+      }
+      .para3 {
+        background-color: rgb(50, 200, 246);
+        font-family: Oswald;
+        display: flex;
+        padding-inline: 200px;
+        font-style: italic;
+        font-weight: 900;
+        color: black;
+        font-size: 2rem;
+        transform: skew(10deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navv">
+      <a href="RightSkill.html"><img src="images/back.png" class="home2" /></a>
+      <a href="score.html"><img src="images/points.png" class="point2" /></a>
+      <a href="profile.html"><img src="images/user.png" class="user2" /></a>
+    </div>
+    <h1 class="head1">Course Library</h1>
+    <h2 class="head2">Coding Courses:</h2>
+    <div class="crs">
+      <img class="imgr" src="images/html1.png" alt />
+      <a class="hrf" href="htmlcourse.html">
+        <p class="para1">HTML Basics</p>
+      </a>
+    </div>
+    <div class="crs">
+      <img class="imgr" src="images/css1.png" alt />
+      <img class="lcok" src="images/locked.png" alt />
+      <a class="hrf" onclick="webcrs1()">
+        <p class="para1">CSS Basics</p>
+      </a>
+    </div>
+    <div class="crs">
+      <img class="imgr" src="images/jsc1.png" alt />
+      <img class="lcok" src="images/locked.png" alt />
+      <a class="hrf" onclick="webcrs2()">
+        <p class="para1">JavaScript Basics</p>
+      </a>
+    </div>
+    <div class="crs">
+      <img class="imgr" src="images/python1.png" alt />
+      <a class="hrf" href="pythoncourse.html">
+        <p class="para1">Python Basics</p>
+      </a>
+    </div>
+    <div class="crs">
+      <img class="imgr" src="images/important.png" alt />
+      <a class="hrf" href="csc.html">
+        <p class="para2">Important Computer Science Basics</p>
+      </a>
+    </div>
+  </body>
+</html>

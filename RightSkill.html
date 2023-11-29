@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RightSkill</title>
+    <link rel="icon" href="images/RightSkill.png" type="images/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Sans:wght@800&family=Oswald&family=Playpen+Sans:wght@700&display=swap");
+      body {
+        margin: 0px;
+      }
+      .homebar {
+        display: flex;
+        width: 100%;
+        background-color: #7fffd4;
+        background: linear-gradient(
+          to right,
+          #7fffd4,
+          #19affa,
+          rgb(1, 73, 174)
+        );
+      }
+      .rightpls {
+        display: flex;
+        margin-right: 10px;
+        margin-left: 970px;
+      }
+
+      .home {
+        display: flex;
+        text-decoration: none;
+        width: 200px;
+      }
+
+      .book1 {
+        display: flex;
+        width: 18%;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+      .book2 {
+        display: flex;
+        margin-top: 4px;
+        font-family: Noto Sans;
+        font-weight: 900;
+        font-size: 2rem;
+        -webkit-text-stroke: 2px black;
+        color: #2bc4fc;
+      }
+
+      .home-course {
+        display: flex;
+        text-decoration: none;
+      }
+      .cslib {
+        display: flex;
+        font-family: roboto;
+        font-weight: 900;
+        font-size: 20px;
+        color: black;
+        width: 150px;
+        margin-left: 5px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        transition: color 0.2s;
+      }
+      .cslib:hover {
+        color: rgb(255, 255, 255);
+      }
+      .home-score {
+        display: flex;
+        text-decoration: none;
+      }
+      .score1 {
+        display: flex;
+        font-family: roboto;
+        font-weight: 900;
+        font-size: 20px;
+        color: black;
+        width: 80px;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        transition: color 0.2s;
+      }
+      .score1:hover {
+        color: rgb(255, 255, 255);
+      }
+      .signbtn {
+        min-width: 70px;
+        background-color: #1aeaa4;
+        border-radius: 10%;
+        box-shadow: 2px 2px 2px rgb(1, 40, 91);
+        border-color: #011949;
+        padding: 5px 12px;
+        font-family: roboto;
+        font-weight: 900;
+        font-size: 20px;
+        margin-top: 7px;
+        margin-bottom: 5px;
+        transition: color 0.2s;
+        transition: background-color 0.1s;
+      }
+      .signbtn:hover {
+        background-color: rgb(0, 64, 148);
+        color: rgb(95, 234, 255);
+        box-shadow: 2px 4px 2px rgba(2, 17, 61, 0.618);
+        cursor: pointer;
+      }
+
+      .headbox {
+        margin-top: -30px;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: #1aeaa4;
+        background: linear-gradient(
+          to right,
+          #7fffd4,
+          #19affa,
+          rgb(1, 73, 174)
+        );
+      }
+
+      .head1 {
+        font-family: Merriweather;
+        display: block;
+        font-weight: 1000;
+        font-size: 3.5rem;
+        text-align: center;
+      }
+      .head2 {
+        font-family: Oswald;
+        display: block;
+        font-weight: 600;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+      .center {
+        display: block;
+        width: 40%;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .head3 {
+        font-family: Oswald;
+        display: block;
+        font-weight: 900;
+        color: black;
+        font-size: 3.5rem;
+        text-align: center;
+      }
+
+      .colect1 {
+        position: absolute;
+        width: 30%;
+        right: 80%;
+      }
+      .colect2 {
+        width: 13%;
+        float: right;
+      }
+
+      .para1 {
+        font-family: Oswald;
+        display: flex;
+        margin-left: 370px;
+        font-weight: 900;
+        color: black;
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .point1 {
+        position: absolute;
+        width: 30%;
+        right: 80%;
+        margin-top: 40px;
+      }
+      .point2 {
+        width: 13%;
+        float: right;
+      }
+      .para2 {
+        font-family: Oswald;
+        display: flex;
+        margin-left: 370px;
+        padding-top: 2%;
+        font-weight: 900;
+        width: 1000px;
+        color: black;
+        font-size: 2rem;
+        text-align: left;
+      }
+
+      .lock1 {
+        position: absolute;
+        width: 30%;
+        right: 80%;
+        margin-top: 40px;
+      }
+      .lock2 {
+        width: 13%;
+        float: right;
+      }
+      .para3 {
+        font-family: Oswald;
+        display: flex;
+        margin-left: 370px;
+        padding-top: 3%;
+        font-weight: 900;
+        width: 1000px;
+        color: black;
+        font-size: 2rem;
+        text-align: left;
+      }
+
+      .head4 {
+        font-family: Oswald;
+        display: block;
+        font-weight: 900;
+        color: black;
+        font-size: 3.5rem;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 20px;
+      }
+      .para4 {
+        font-family: Oswald;
+        display: flex;
+        margin-left: 290px;
+        font-weight: 900;
+        width: 1100px;
+        color: black;
+        font-size: 2rem;
+        text-align: center;
+      }
+      .crsbtn {
+        background-color: #2ae6ff;
+        color: rgb(0, 0, 62);
+        display: inline-block;
+        border-radius: 0.5%;
+        padding: 15px 32px;
+        box-shadow: 4px 4px 10px rgb(56, 61, 66);
+        font-family: roboto;
+        font-weight: 900;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 590px;
+        transition: color 0.2s;
+        transition: background-color 0.1s;
+      }
+      .crsbtn:hover {
+        background-color: rgb(0, 64, 148);
+        color: rgb(255, 255, 255);
+        box-shadow: 4px 4px 10px rgba(0, 2, 6, 0.705);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="homebar">
+      <a class="home" href="RightSkill.html">
+        <img src="images/book5.png" class="book1" alt />
+        <div class="book2">RightSkill</div>
+      </a>
+      <div class="rightpls">
+        <a class="home-course" href="courses.html">
+          <div class="cslib">Course Library</div>
+        </a>
+        <a class="home-score" href="score.html">
+          <div class="score1">Score</div>
+        </a>
+        <a href="signup.html">
+          <button class="signbtn">Signup</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="headbox">
+      <h1 class="head1">Learning Made Fun And Free</h1>
+      <h2 class="head2">Access To Elite Courses!</h2>
+      <img src="images/oed.png" class="center" alt />
+    </div>
+
+    <div class="about">
+      <h3 class="head3">What Do We Offer?</h3>
+      <div class="colect1">
+        <img src="images/collection.png" class="colect2" alt />
+      </div>
+      <p class="para1">
+        Large number of courses are available for free and we add new content
+        regularly.
+      </p>
+      <div class="point1">
+        <img src="images/upward.png" class="point2" alt />
+      </div>
+      <p class="para2">
+        Problems and other activities are available under the course
+        materials.Points can be earned as you solve these problems.
+      </p>
+      <div class="lock1">
+        <img src="images/lock.png" class="lock2" alt />
+      </div>
+      <p class="para3">
+        Points can be used as credits to unlock more courses or even special
+        rewards.
+      </p>
+    </div>
+
+    <div class="final1">
+      <h4 class="head4">Learning Is Unique Here!</h4>
+      <p class="para4">
+        Our aim is to make the learning process engaging so that people don't
+        lose focus easily.
+      </p>
+      <a href="courses.html">
+        <button class="crsbtn">Access The Course Library</button>
+      </a>
+    </div>
+
+    <script></script>
+  </body>
+</html>
